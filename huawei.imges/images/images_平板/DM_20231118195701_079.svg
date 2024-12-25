@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_16949" data-name="矩形 16949" width="37.47" height="33.621" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="扬声器" transform="translate(0 -0.418)">
+    <g id="组_52602" data-name="组 52602">
+      <rect id="矩形_16931" data-name="矩形 16931" width="48" height="48" transform="translate(0 0.418)" fill="none"/>
+      <g id="组_52622" data-name="组 52622" transform="translate(5 7.418)">
+        <g id="组_52622-2" data-name="组 52622" clip-path="url(#clip-path)">
+          <path id="路径_23132" data-name="路径 23132" d="M11.823,32.621V1a1,1,0,0,1,2,0V32.621a1,1,0,0,1-2,0M23.647,31.2V2.418a1,1,0,0,1,2,0V31.2a1,1,0,1,1-2,0ZM5.911,26.689V6.931a1,1,0,0,1,2,0V26.689a1,1,0,0,1-2,0Zm11.824-1.713V8.645a1,1,0,1,1,2,0V24.976a1,1,0,0,1-2,0Zm11.823-.031V8.674a1,1,0,1,1,2,0V24.945a1,1,0,0,1-2,0ZM35.47,19.5V14.118a1,1,0,1,1,2,0V19.5a1,1,0,0,1-2,0ZM0,19.464V14.158a1,1,0,0,1,2,0v5.306a1,1,0,0,1-2,0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

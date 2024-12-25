@@ -1,0 +1,33 @@
+<svg id="编组_9备份" data-name="编组 9备份" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="35" viewBox="0 0 44 35">
+  <defs>
+    <clipPath id="clip">
+      <use xlink:href="#fill"/>
+    </clipPath>
+    <clipPath id="clip-2">
+      <use xlink:href="#fill-2"/>
+    </clipPath>
+    <clipPath id="clip-3">
+      <use xlink:href="#fill-3"/>
+    </clipPath>
+  </defs>
+  <g id="编组_10" data-name="编组 10">
+    <g id="矩形" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2">
+      <rect width="44" height="30" rx="2" stroke="none"/>
+      <rect x="1" y="1" width="42" height="28" rx="1" fill="none"/>
+    </g>
+    <g id="矩形-2" data-name="矩形" transform="translate(10 33)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3">
+      <rect id="fill" width="24" height="2" rx="1" stroke="none"/>
+      <path d="M0,0.5h24M22.5,0v2M24,1.5h-24M1.5,2v-2" fill="none" clip-path="url(#clip)"/>
+    </g>
+    <g id="编组_26" data-name="编组 26" transform="translate(19 29)">
+      <g id="矩形-3" data-name="矩形" transform="translate(0 6) rotate(-90)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3">
+        <rect id="fill-2" width="6" height="2" rx="1" stroke="none"/>
+        <path d="M0,0.5h6M4.5,0v2M6,1.5h-6M1.5,2v-2" fill="none" clip-path="url(#clip-2)"/>
+      </g>
+      <g id="矩形-4" data-name="矩形" transform="translate(4 6) rotate(-90)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="3">
+        <rect id="fill-3" width="6" height="2" rx="1" stroke="none"/>
+        <path d="M0,0.5h6M4.5,0v2M6,1.5h-6M1.5,2v-2" fill="none" clip-path="url(#clip-3)"/>
+      </g>
+    </g>
+  </g>
+</svg>

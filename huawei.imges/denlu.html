@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>denlu</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/commen-平板.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .all {
+            height: 100vh;
+            /* background: #e7e7e7 url(./imges/images/denlu.jpg) center no-repeat fixed; */
+            background-size: cover;
+            /* 设置css背景模糊 */
+            backdrop-filter: blur(5px);
+            /* 设置内容居中 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* 设置登录大盒子样式 */
+        .container {
+            background-color: #e7e7e7;
+            border-radius: 0.7rem;
+            box-shadow:
+                0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
+                0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+            height: 420px;
+            max-width: 750px;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        /* 登录、注册框 通用部分 */
+        .container-form {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            transition: all .6s ease-in-out;
+        }
+
+        /* 登录框-默认层级2-透明度 1 */
+        .container-signin {
+            left: 0;
+            width: 50%;
+            z-index: 2;
+        }
+
+        /* 注册框-默认层级1-透明度0 */
+        .container-signup {
+            left: 0;
+            opacity: 0;
+            width: 50%;
+            z-index: 1;
+        }
+
+        /* 表单样式 */
+        .from {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 3rem;
+            height: 100%;
+            text-align: center;
+            background-color: #e7e7e7;
+        }
+
+        /* 设置标题 */
+        .form-title {
+            font-weight: 300;
+            margin: 0;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 1.25rem;
+        }
+
+        /* 超链接美化 */
+        .links {
+            display: block;
+            color: #333;
+            font-size: 0.9rem;
+            margin: 0;
+            margin-top: 1.5rem;
+            margin-bottom: 16px;
+            text-decoration: none;
+        }
+
+        /* 输入框美化 */
+        .input {
+            width: 80%;
+            background-color: #fff;
+            padding: 0.9rem 0.9rem;
+            margin: 0.5rem 20px;
+            border: none;
+            outline: none;
+        }
+
+        /* 按钮样式美化 */
+        .btn {
+            background-color: #f25d8e;
+            box-shadow: 0 4px 4px rgba(255, 112, 159, .3);
+            border-radius: 5px;
+            color: #e7e7e7;
+            border: none;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+            padding: 0.9rem 4rem;
+            /* 将字母转换成大写 */
+            text-transform: uppercase;
+            transition: transform 80ms ease-in;
+        }
+
+        .form>.btn {
+            margin-top: 1.5rem;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
+        }
+
+        /* 叠加层部分 */
+        .container-overlay {
+            height: 100%;
+            /* 定位右侧 */
+            left: 50%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            transition: transform .6s ease-in-out;
+            width: 50%;
+            z-index: 100;
+        }
+
+        /* 设置叠加层子盒子，宽度200%，
+        只显示右半边图，左侧溢出隐藏掉
+         */
+        .overlay {
+            width: 200%;
+            height: 100%;
+            position: relative;
+            left: -100%;
+            background: url(./imges/images/denlu.jpg) no-repeat center fixed;
+            background-size: cover;
+            transform: translateX(0);
+            transition: transform .6s ease-in-out;
+        }
+
+        .overlay-panel {
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transform: translateX(0);
+            transition: transform .6s ease-in-out;
+        }
+
+        /* 里面两个位移层位置（居左+居右） */
+        .overlay-left {
+            transform: translateX(-20%);
+        }
+
+        .overlay-right {
+            right: 0;
+            transform: translateX(0);
+        }
+
+
+        /* JS切换类名 */
+        /* 设计激活时叠加层的位置 */
+        .panel-active .overlay-left {
+            transform: translateX(0);
+        }
+
+        .panel-active .container-overlay {
+            transform: translateX(-100%);
+        }
+
+        .panel-active .overlay {
+            transform: translateX(50%);
+        }
+
+        /* 设置激活时，登录注册层的位置和透明度 */
+        .panel-active .container-signin {
+            transform: translateX(-100%);
+        }
+
+        .panel-active .container-signup {
+            opacity: 1;
+            z-index: 5;
+            transform: translateX(100%);
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="header" style="height: 80px;">
+        <div class="header_top">
+        </div>
+        <div class="nav ">
+            <div class="left">
+                <!-- jia -->
+                <div class="logo">FlyTech</div>
+                <!-- jia -->
+                <ul>
+                    <li>
+                        <a href="./index-手机.html" title="手机">手机
+                            <div class="nav_left_a_bottom"></div>
+                        </a>
+                    </li>
+                    <li><a href="./index-电脑-1.html" title="电脑">电脑
+                            <div class="nav_left_a_bottom"></div>
+                        </a></li>
+                    <li><a href="./index-平板.html" title="平板">平板
+                            <div class="nav_left_a_bottom"></div>
+                        </a></li>
+                    <li><a href="./watch.html" title="穿戴">穿戴
+                            <div class="nav_left_a_bottom"></div>
+                        </a></li>
+                    <li><a href="./404.html" title="耳机音箱">耳机音箱
+                            <div class="nav_left_a_bottom"></div>
+                        </a></li>
+                    <li><a href="./index-全屋智能.html" title="全屋智能">全屋智能
+                            <div class="nav_left_a_bottom"></div>
+                        </a></li>
+                    <li><a href="./404.html" title="路由器">路由器
+                            <div class="nav_left_a_bottom"></div>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="./index-服务支持.html">服务支持
+                            <div class="nav_right_a_bottom"></div>
+                        </a></li>
+
+                    <li><a href="./index_商用.html">商用
+                            <div class="nav_right_a_bottom"></div>
+                        </a></li>
+
+                        <!-- 放大镜 -->
+                    <li><a href="./sreach.html"></a></li>   
+                     <!--用户头像  -->
+                    <li><a href="#"></a></li>    
+                    <li><a href="./index-商城.html">flytech商城</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="all">
+    <div class="container">
+        <!-- 注册框 -->
+        <div class="container-form container-signup">
+            <!-- 注册框的静态结构 -->
+            <form action="#" class="form" id="form1">
+                <h2 class="form-title">注册账号</h2>
+                <input type="text" placeholder="用户名" class="input" />
+                <input type="email" placeholder="邮箱" class="input" />
+                <input type="password" placeholder="密码" class="input" />
+                <button type="button" class="btn">点击注册</button>
+            </form>
+        </div>
+        <!-- 登录和注册，将来叠在一起，控制表单切换 -->
+
+
+        <!-- 登录框 -->
+        <!-- 登录框的静态结构 -->
+        <div class="container-form container-signin">
+            <form action="#" class="form" id="form2">
+                <h2 class="form-title">欢迎登录</h2>
+                <input type="email" placeholder="用户名" class="input" />
+                <input type="password" placeholder="密码" class="input" />
+                <a href="#" class="links">忘记密码</a>
+                <button type="button" class="btn">登录</button>
+            </form>
+        </div>
+
+        <!-- 叠加层部分，将来控制背景层的展示 -->
+
+        <!-- 叠加层部分 -->
+        <div class="container-overlay">
+            <div class="overlay">
+                <!-- 左边，登录 -->
+                <div class="overlay-panel overlay-left">
+                    <button class="btn" id="signIn">
+                        已有帐号，直接登录
+                    </button>
+                </div>
+                <!-- 右边，注册 -->
+                <div class="overlay-panel overlay-right">
+                    <button class="btn" id="signUp">
+                        没有账号，点击注册
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <script>
+        // 设计类名 切换 状态 ，JS 控制切换类名
+        const signInBtn = document.querySelector("#signIn")
+        const signUpBtn = document.querySelector("#signUp")
+        const container = document.querySelector(".container")
+
+        signInBtn.addEventListener("click", () => {
+            container.classList.remove("panel-active")
+        })
+
+        signUpBtn.addEventListener("click", () => {
+            // 点击按钮，动态添加类名
+            container.classList.add("panel-active")
+        })
+    </script>
+</body>
+
+</html>

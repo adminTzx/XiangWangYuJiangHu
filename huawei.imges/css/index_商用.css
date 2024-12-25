@@ -1,0 +1,133 @@
+.screen1{
+    margin: 0 auto;
+    width: 1472px;
+    height: 550px;
+    background-color: pink;
+    background-image: url(../imges/imges.商用/10002.jpg);
+    background-size: 1472px 550px;
+}
+
+.screen2{
+    margin: 100px auto;
+    width: 1300px;
+    height: 750px;
+    border-radius: 40px;
+    background-color: #fff;
+}
+
+.screen3{
+    margin: 100px auto;
+    width: 1300px;
+    height: 400px;
+    /* border-radius: 40px; */
+    background-color: whitesmoke;
+}
+
+.screen2 .s2_left{
+    float: left;
+    width: 900px;
+    height: 750px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-image: url(../imges/imges.商用/10001.jpg);
+    background-size: contain;
+    background-size: 900px 750px;
+}
+
+.screen2 .s2_right{
+    /* margin: 100px auto; */
+    float:right;
+    width: 400px;
+    height: 750px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: whitesmoke;
+}
+
+.s2_1{
+    position: relative;
+    top: 4%;
+    margin: auto;
+    width: 350px;
+    height: 650px;
+    /* background-color: #e6b1b1; */
+}
+
+.s2_1 h1{
+    font-size: 40px;
+}
+
+.s2_2{
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+.s2_2 a{
+    color: blue;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.checkbox-container {
+  position: relative;
+  top: 7px;
+}
+
+.checkbox-container input {
+    float: left;
+    position: relative;
+    top: 3px;
+    width: 20px;
+    margin-right: 8px;
+}
+
+
+.s3_1 h1{
+    text-align: center;
+    font-size: 35px;
+    color: #000;
+}
+
+.s3_2{
+    margin-top: 70px;
+    width: 100%;
+    height: 400px;
+}
+
+.s3_2_1,.s3_2_2,.s3_2_3{
+   float: left;
+   margin-left: 153px;
+}

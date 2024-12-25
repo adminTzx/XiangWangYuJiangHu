@@ -1,0 +1,1338 @@
+/* 版心 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.bd {
+    background-color: #f5f5f5;
+    color: #000;
+    padding-top: 90px;
+}
+
+.bd a {
+    cursor: pointer;
+}
+
+/* 头部轮播图 */
+
+.bd .banner {
+    display: none;
+}
+
+.bd .bannerBox {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+}
+
+.bd .bannerBox li:nth-child(1) .banner-text {
+    position: absolute;
+    width: 445px;
+    height: 400px;
+    bottom: 0;
+    right: 0;
+    /* background-color: pink; */
+    text-align: left;
+}
+
+.bd .bannerBox li:nth-child(1) .banner-text h2 {
+    height: 40px;
+    line-height: 40px;
+    padding: 20px 0;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.bd .bannerBox li:nth-child(1) .banner-text p {
+    font-size: 20px;
+}
+
+.bd .bannerBox li:nth-child(1) .banner-text a {
+    display: block;
+    float: left;
+    width: 106px;
+    height: 47px;
+    line-height: 47px;
+    margin-top: 46px;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #000;
+    color: #fff;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bd .bannerBox li:nth-child(2) {
+    position: relative;
+}
+
+.bd .bannerBox li:nth-child(2) h2 {
+    position: absolute;
+    bottom: 154px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.bd .bannerBox li:nth-child(2) p {
+    position: absolute;
+    left: 0;
+    bottom: 150px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.bd .item {
+    width: 1200px;
+    height: 600px;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.bd .item img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.bd .points {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+}
+
+.bd .points p {
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.bd h2 {
+    margin-top: 80px;
+    margin-bottom: 24px;
+    height: 60px;
+    font-size: 48px;
+    text-align: center;
+}
+
+.bd .card {
+    width: 1200px;
+    height: 330px;
+    padding: 0 136px;
+    /* background-color: pink; */
+}
+
+.bd .card li {
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 330px;
+    background-color: #fff;
+    margin-left: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.bd .card li:first-child {
+    margin-left: 0;
+}
+
+.bd .card li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.bd .card li a h4 {
+    margin-top: 25px;
+    margin-bottom: 4px;
+    font-size: 18px;
+
+}
+
+.bd .card li a span {
+    display: block;
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+}
+
+.bd .card li a .ims {
+    position: absolute;
+    left: 6px;
+    bottom: 6px;
+    width: 208px;
+    height: 208px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 0 0 16px 16px;
+}
+
+.bd .card li a .ims img {
+    display: block;
+    width: 100%;
+    /* border-radius: 0 0 16px 16px; */
+    transition: transform 1s ease-in-out;
+}
+
+.bd .card li a .jiantou {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .3);
+    background-image: url(../images/images-全屋智能/bd_card_jiantou.png);
+    background-size: calc(45%);
+    background-position: 11px -20px;
+    background-repeat: no-repeat;
+    transition: background-position 1s ease-in-out;
+}
+
+.bd .card li:hover .jiantou {
+    background-position: 11px 6px;
+}
+
+.bd .card li:hover .ims img {
+    transform: scale(1.2);
+}
+
+/* 点亮功能 */
+
+.bd h3 {
+    height: 50px;
+    line-height: 50px;
+    margin-top: 90px;
+    font-size: 38px;
+    text-align: center;
+}
+
+.bd .tit-p {
+    margin-bottom: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.bd .light_up {
+    width: 1200px;
+}
+
+.bd .light_up li,
+.bd .Single .control,
+.bd .Single .door {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    border-radius: 16px;
+    padding: 16px 16px 24px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 1%);
+    margin-bottom: 15px;
+
+}
+
+.bd .light_up li:last-child {
+    margin-bottom: 0;
+}
+
+.bd .light_up li .left,
+.bd .Single .control .left,
+.bd .Single .door .left {
+    float: left;
+    width: 500px;
+    height: 335px;
+    background-size: cover;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.bd .light_up li:nth-child(1) .left {
+    background-image: url(../images/images-全屋智能/light_up_nth1_left.jpg);
+}
+
+.bd .light_up li .center,
+.bd .Single .control .center,
+.bd .Single .door .center {
+    position: relative;
+    float: left;
+    width: 300px;
+    height: 335px;
+    background-size: cover;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.bd .light_up li:nth-child(1) .center {
+    background-image: url(../images/images-全屋智能/light_up_nth1_center.jpg);
+}
+
+.bd .light_up li .right,
+.bd .Single .control .right,
+.bd .Single .door .right {
+    float: left;
+    width: 338px;
+    height: 335px;
+    cursor: pointer;
+    /* background: pink; */
+}
+
+.bd .light_up li .right .top,
+.bd .light_up li .right .bottom,
+.bd .Single .control .right .top,
+.bd .Single .control .right .bottom,
+.bd .Single .door .right .top,
+.bd .Single .door .right .bottom {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    /* background-color: green; */
+    background-size: cover;
+}
+
+.bd .light_up li .right .top,
+.bd .Single .control .right .top,
+.bd .Single .door .right .top {
+    margin-bottom: 15px;
+}
+
+.bd .light_up li:nth-child(1) .right .top {
+    background-image: url(../images/images-全屋智能/light_up_nth1_right_top.jpg);
+}
+
+.bd .light_up li:nth-child(1) .right .bottom {
+    background-image: url(../images/images-全屋智能/light_up_nth1_right_bottom.jpg);
+
+}
+
+.bd .light_up .light_text,
+.bd .Single .control .light_text,
+.bd .Single .door .light_text {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    height: 25px;
+    line-height: 17px;
+    color: #fff;
+    font-size: 12px;
+    background-color: #2e2e2e;
+    border-radius: 4px;
+    margin-right: 8px;
+    padding: 4px 8px;
+}
+
+.bd .light_up .down,
+.bd .Single .control .down,
+.bd .Single .door .down {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    width: 100%;
+    height: 73px;
+    /* background-color: pink; */
+    padding: 24px 16px 0;
+
+}
+
+.bd .light_up .down .down_left,
+.bd .Single .control .down .down_left,
+.bd .Single .door .down .down_left {
+    float: left;
+    height: 49px;
+    line-height: 49px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.bd .light_up .down .down_right,
+.bd .Single .control .down .down_right,
+.bd .Single .door .down .door_more {
+    float: right;
+    height: 48px;
+    line-height: 20px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 6px;
+    color: #fff;
+    margin-left: 24px;
+    padding: 13px 30px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 800;
+    transition: all .3s ease-out;
+}
+
+.bd .light_up .down .down_right:hover,
+.bd .Single .control .down .down_right:hover,
+.bd .Single .door .down .door_more:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.bd .light_up li:nth-child(2) .left {
+    background-image: url(../images/images-全屋智能/light_up_nth2_left.jpg);
+}
+
+.bd .light_up li:nth-child(2) .center {
+    background-image: url(../images/images-全屋智能/light_up_nth2_center.jpg);
+}
+
+.bd .light_up li:nth-child(2) .right .top {
+    background-image: url(../images/images-全屋智能/light_up_nth2_right_top.jpg);
+}
+
+.bd .light_up li:nth-child(2) .right .bottom {
+    background-image: url(../images/images-全屋智能/light_up_nth2_right_bottom.jpg);
+}
+
+.bd .light_up li:nth-child(3) .left {
+    background-image: url(../images/images-全屋智能/light_up_nth3_left.jpg);
+}
+
+.bd .light_up li:nth-child(3) .center {
+    background-image: url(../images/images-全屋智能/light_up_nth3_center.jpg);
+}
+
+.bd .light_up li:nth-child(3) .right .top {
+    background-image: url(../images/images-全屋智能/light_up_nth3_right_top.jpg);
+}
+
+.bd .light_up li:nth-child(3) .right .bottom {
+    background-image: url(../images/images-全屋智能/light_up_nth3_right_bottom.jpg);
+}
+
+.bd .light_up li:nth-child(4) .left {
+    background-image: url(../images/images-全屋智能/light_up_nth4_left.jpg);
+}
+
+.bd .light_up li:nth-child(4) .center {
+    background-image: url(../images/images-全屋智能/light_up_nth4_center.jpg);
+}
+
+.bd .light_up li:nth-child(4) .right .top {
+    background-image: url(../images/images-全屋智能/light_up_nth4_right_top.jpg);
+}
+
+.bd .light_up li:nth-child(4) .right .bottom {
+    background-image: url(../images/images-全屋智能/light_up_nth4_right_bottom.jpg);
+}
+
+/* 方案介绍 */
+.bd .programmes {
+    height: 480px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 1%);
+    border-radius: 16px;
+    background-image: url(../images/images-全屋智能/programmes.jpg);
+    cursor: pointer;
+}
+
+.bd .Single .control .left {
+    background-image: url(../images/images-全屋智能/control_left.jpg);
+}
+
+.bd .Single .control .center {
+    background-image: url(../images/images-全屋智能/control_center.jpg);
+}
+
+.bd .Single .control .right .top {
+    background-image: url(../images/images-全屋智能/control_right_top.jpg);
+}
+
+.bd .Single .control .right .bottom {
+    background-image: url(../images/images-全屋智能/control_right_bottom.jpg);
+}
+
+.bd .Single .Single_products {
+    margin: 16px auto;
+    width: 100%;
+    height: 350px;
+    /* background-color: pink; */
+}
+
+.bd .Single .Single_products li {
+    float: left;
+    width: 288px;
+    height: 350px;
+    margin-right: 16px;
+    padding: 16px 16px 24px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 1%);
+}
+
+.bd .Single .Single_products li:nth-child(4) {
+    margin-right: 0;
+}
+
+.bd .Single .Single_products li img {
+    width: 120px;
+    cursor: pointer;
+}
+
+.bd .Single .Single_products li .new {
+    height: 30px;
+}
+
+.bd .Single .Single_products li .new span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #d21111;
+}
+
+.bd .Single .Single_products li h5 {
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.bd .Single .Single_products li p {
+    font-size: 12px;
+    color: #757575;
+}
+
+.bd .Single .Single_products li .more {
+    height: 50px;
+    padding-top: 24px;
+}
+
+.bd .Single .Single_products li .more a {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 12px 7px 12px;
+
+}
+
+.bd .Single .Single_products li .more span {
+    display: inline-block;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-image: url(../images/images-全屋智能/Single_products_right.png);
+    background-size: cover;
+    margin-left: 6px;
+    transition: transform .6s ease-out;
+}
+
+.bd .Single .Single_products li .more a:hover span {
+    transform: translateX(5px);
+}
+
+.bd .Single .door {
+    height: 474px;
+}
+
+.bd .Single .door .left {
+    background-image: url(../images/images-全屋智能/Single_door_left.jpg);
+}
+
+.bd .Single .door .center {
+    background-image: url(../images/images-全屋智能/Single_door_center.jpg);
+}
+
+.bd .Single .door .right .top {
+    background-image: url(../images/images-全屋智能/Single_door_right_top.jpg);
+}
+
+.bd .Single .door .right .bottom {
+    background-image: url(../images/images-全屋智能/Single_door_right_bottom.jpg);
+}
+
+.bd .Single .door .down {
+    height: 97px;
+}
+
+.bd .Single .door .down .price {
+    position: absolute;
+    left: 16px;
+    bottom: 0;
+    height: 24px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.bd .Single .door .down .buy {
+    position: absolute;
+    right: 16px;
+    bottom: 15px;
+    height: 48px;
+    line-height: 22px;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+    font-size: 13px;
+    margin-left: 24px;
+    padding: 13px 30px;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: border-color .3s ease-out;
+}
+
+.bd .Single .door .down .buy:hover {
+    border-color: #000;
+}
+
+.bd .Single .door .down .door_more {
+    position: absolute;
+    right: 125px;
+    bottom: 15px;
+}
+
+.bd .Single .lock {
+    width: 100%;
+    height: 356px;
+    margin: 20px auto;
+}
+
+.bd .Single .lock li {
+    float: left;
+    height: 100%;
+    margin-right: 20px;
+    border-radius: 16px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 1%);
+}
+
+.bd .Single .lock li:first-child {
+    width: 580px;
+    padding: 30px;
+}
+
+.bd .Single .lock li:first-child .left,
+.bd .Single .lock li:first-child .right {
+    float: left;
+    position: relative;
+    width: 260px;
+    height: 100%;
+}
+
+.bd .Single .lock li:first-child .right {
+    padding-top: 34px;
+}
+
+.bd .Single .lock li:first-child .left img {
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.bd .Single .lock li .min-box {
+    height: 30px;
+}
+
+.bd .Single .lock li:first-child .right h4 {
+    height: 40px;
+    font-size: 28px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.bd .Single .lock li:first-child .right .lock_text {
+    height: 22px;
+    line-height: 22px;
+    color: #757575;
+}
+
+.bd .Single .lock li .price {
+    margin-top: 24px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.bd .Single .lock li .btn {
+    height: 50px;
+    padding: 24px 0 0;
+}
+
+.bd .Single .lock li .btn a,
+.bd .allProducts li .btn a {
+    display: inline-block;
+    height: 18px;
+    font-weight: 700;
+    font-size: 13px;
+    margin: 0 24px 7px 0;
+}
+
+.bd .Single .lock li .btn span,
+.bd .allProducts li .btn span {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin-left: 6px;
+    background-image: url(../images/images-全屋智能/Single_products_right.png);
+    background-size: cover;
+    transition: transform .6s ease-out;
+}
+
+.bd .Single .lock li .btn a:hover span,
+.bd .allProducts li .btn a:hover span {
+    transform: translateX(5px);
+}
+
+.bd .Single .lock li:nth-child(2),
+.bd .Single .lock li:nth-child(3) {
+    width: 290px;
+    text-align: center;
+    padding: 16px 16px 24px;
+}
+
+.bd .Single .lock li:last-child {
+    margin-right: 0;
+}
+
+.bd .Single .lock li:nth-child(2) img,
+.bd .Single .lock li:nth-child(3) img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.bd .Single .lock li:nth-child(2) h4,
+.bd .Single .lock li:nth-child(3) h4 {
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.bd .Single .lock li:nth-child(2) .lock_text,
+.bd .Single .lock li:nth-child(3) .lock_text {
+    height: 17px;
+    font-size: 12px;
+    color: #757575;
+}
+
+.bd .Single .lock li:nth-child(2) .btn a,
+.bd .Single .lock li:nth-child(3) .btn a {
+    margin: 0 12px 7px;
+}
+
+/* 全部产品 */
+
+
+.bd .allProducts {
+    height: 445px;
+    margin-top: 25px;
+    /* background-color: pink; */
+}
+
+.bd .allProducts li {
+    float: left;
+    width: 288px;
+    height: 445px;
+    background-color: #fff;
+    padding: 24px 24px 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.01);
+    margin-right: 16px;
+    text-align: left;
+}
+
+.bd .allProducts li:last-child {
+    margin-right: 0;
+}
+
+.bd .allProducts li img {
+    width: 240px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bd .allProducts li .new {
+    height: 20px;
+}
+
+.bd .allProducts li h4 {
+    height: 40px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.bd .allProducts li .price {
+    margin: 24px 0 16px;
+    height: 22px;
+    font-weight: 700;
+}
+
+.bd .allProducts li .btn {
+    height: 28px;
+}
+
+.bd .allProducts li .btn a {
+    margin-top: 8px;
+}
+
+/* 查看全部 */
+.bd .view {
+    width: 120px;
+    height: 48px;
+    color: #fff;
+    background-color: #000;
+    margin: 40px auto;
+    margin-bottom: 100px;
+    padding: 15px 24px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+.bd .view span {
+    float: left;
+    height: 18px;
+    line-height: 18px;
+}
+
+.bd .view img {
+    float: left;
+    background-color: #fff;
+    width: 16px;
+    border-radius: 50%;
+    margin-left: 4px;
+    transition: all .5s;
+}
+
+.bd .view:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.bd .view:hover img {
+    transform: rotate(90deg);
+}
+
+/* 查看全部的下面一块 */
+.bd .box {
+    height: 480px;
+    margin-top: 4px;
+    /* background-color: pink; */
+}
+
+.bd .box .left,
+.bd .box .right {
+    position: relative;
+    float: left;
+    width: 595px;
+    height: 100%;
+    background-color: #fff;
+    padding: 65px 0 0;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 1%);
+    border-radius: 16px;
+}
+
+.bd .box .left {
+    margin-right: 10px;
+}
+
+.bd .box .box_text {
+    width: 100%;
+    height: 160px;
+    padding: 0 64px;
+    text-align: left;
+    /* background-color: pink; */
+}
+
+.bd .box .box_text h4 {
+    width: 100%;
+    height: 45px;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.bd .box .box_text p {
+    color: #00000099;
+}
+
+.bd .box .box_text .more {
+    display: inline-block;
+    margin: 24px 8px 7px 0;
+    padding: 13px 0;
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.bd .box .box_text .more span {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin-left: 6px;
+    background-image: url(../images/images-全屋智能/Single_products_right.png);
+    background-size: cover;
+    transition: transform .6s ease-out;
+}
+
+.bd .box .box_text .more:hover span {
+    transform: translateX(5px);
+}
+
+.bd .box .img {
+    position: absolute;
+    right: 15px;
+    bottom: 45px;
+    width: 332px;
+    height: 250px;
+    background-size: contain;
+    /* background-color: pink; */
+}
+
+.bd .box .left .img {
+    background-image: url(../images/images-全屋智能/box_left.jpg);
+}
+
+.bd .box .right .img {
+    background-image: url(../images/images-全屋智能/box_right.jpg);
+}
+
+/* 智慧场景 */
+
+.bd .scene-p {
+    margin: 16px 0;
+    color: #626262;
+    text-align: center;
+}
+
+.bd .scene_more {
+    display: block;
+    width: 114px;
+    height: 48px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 13px;
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 6px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 13px 30px;
+    transition: all .3s ease-out;
+}
+
+.bd .scene_more:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+
+/* 切换 */
+
+.bd .scene-box {
+    position: relative;
+    width: 1400px;
+    height: 510px;
+    overflow: hidden;
+    margin-left: 55px;
+    background-color: #f5f5f5;
+    scroll-behavior: smooth;
+}
+
+.bd .scene-box .cardBox {
+    position: absolute;
+    width: 1660px;
+    height: 510px;
+    background-color: #f5f5f5;
+    list-style: none;
+}
+
+.bd .scene-box .cardBox .card {
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 510px;
+    padding: 0;
+    padding-top: 30px;
+    margin-right: 15px;
+    border-radius: 16px;
+    background-color: #fff;
+
+}
+
+.cardBox .card img {
+    width: 400px;
+    border-radius:0 0 16px 16px;
+}
+
+.bd .scene-box .cardBox .card .nav {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding: 0 20px;
+    width: 400px;
+    height: 30px;
+    /* background-color: pink; */
+}
+
+.bd .scene-box .cardBox .card .title {
+    float: left;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+    margin-right: 56px;
+}
+
+.bd .scene-box .cardBox .card .nav-right {
+    float: right;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-image: url(../images/images-全屋智能/scene_plus.png);
+    background-size: contain;
+    opacity: 1;
+    cursor: pointer;
+}
+.bd .scene-box .cardBox .card .nav-right:hover{
+    opacity: .8;
+}
+
+.bd .fa-solid {
+    position: relative;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+.bd  .fa-angle-left {
+    left: 80px;
+    top: 337px;
+  }
+
+.bd  .fa-angle-right {
+    right: -1390px;
+    top: -220px;
+  }
+
+/* 尊享服务 */
+.bd .services {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    width: 1200px;
+    height: 350px;
+    background-color: #fff;
+    padding: 50px 145px 60px;
+    border-radius: 24px;
+}
+
+.bd .services h5 {
+    height: 40px;
+    font-size: 32px;
+    margin-bottom: 48px;
+}
+
+.bd .services ul li {
+    float: left;
+    width: 274px;
+    padding-right: 40px;
+}
+
+.bd .services ul li .heading {
+    position: relative;
+    width: 100%;
+    height: 24px;
+    margin-bottom: 16px;
+    padding-left: 44px;
+}
+
+.bd .services ul li img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+}
+
+.bd .services ul li .texting {
+    padding-left: 44px;
+    color: #7f7f7f;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.bd .services ul li .texting:hover {
+    color: #000;
+}
+
+
+/* 全屋智能线下授权门店查询 */
+.bd .store {
+    width: 100%;
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.bd .store h5 {
+    height: 56px;
+    text-align: center;
+    font-size: 48px;
+}
+
+.bd .store .enquire {
+    height: 104px;
+    padding: 40px 0;
+}
+
+.bd .store .enquire .inter {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 20px;
+    padding-right: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.bd .store .enquire .inter span {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-left: 4px;
+    background-image: url(../images/images-全屋智能/Single_products_right.png);
+    background-size: contain;
+    transition: transform .3s ease-out;
+}
+
+.bd .store .enquire .inter:hover span {
+    transform: translate(10px, -50%);
+}
+
+/* 全屋智能线下授权门店查询 */
+.bd .box-of-map {
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+    overflow-y: auto;
+    /* background-color: pink; */
+}
+
+.bd .box-of-map .map-head {
+    width: 984px;
+    height: 120px;
+    padding: 24px 32px 24px 40px;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.bd .box-of-map .map-head .inner {
+    position: relative;
+    width: 920px;
+    height: 72px;
+    padding: 0 120px 0 48px;
+    text-align: left;
+}
+
+.bd .box-of-map .map-head .inner img {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    height: 24px;
+}
+
+.bd .box-of-map .map-head .inner h5 {
+    font-size: 16px;
+    height: 24px;
+    text-align: left;
+}
+
+.bd .box-of-map .map-head .inner .number {
+    height: 48px;
+    padding-top: 24px;
+    color: #00000080;
+}
+
+.bd .box-of-map .map-head .inner .change-city {
+    position: absolute;
+    height: 24px;
+    right: 0;
+    top: 0;
+    color: #2788D9;
+}
+
+.bd .box-of-map li {
+    width: 984px;
+    height: 150px;
+    padding: 28px 32px 24px 40px;
+    cursor: pointer;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.bd .box-of-map li .map-text {
+    position: relative;
+    width: 920px;
+    height: 96px;
+    padding: 0 120px 0 48px;
+}
+
+.bd .box-of-map li .map-text span {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #ce4949;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.bd .box-of-map li .map-text h5 {
+    height: 24px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.bd .box-of-map li .map-text .address {
+    height: 40px;
+    padding-top: 16px;
+    color: #00000080;
+}
+
+.bd .box-of-map li .map-text .phone {
+    height: 32px;
+    padding-top: 8px;
+    color: #00000080;
+}
+
+.bd .box-of-map li:nth-child(2) {
+    height: 126px;
+}
+
+.bd .box-of-map li:nth-child(2) .map-text {
+    height: 72px;
+}
+
+.bd .box-of-bottom {
+    margin: 55px auto;
+    width: 1200px;
+    height: 450px;
+    /* background-color: pink; */
+}
+
+.bd .box-of-bottom .left,
+.bd .box-of-bottom .right {
+    position: relative;
+    float: left;
+    width: 595px;
+    height: 100%;
+    background-position: center;
+    padding-top: 90px;
+    background-size: cover;
+    /* background-color: pink; */
+    box-shadow: 0 4px 4px rgb(0 0 0 / 1%);
+    border-radius: 16px;
+}
+
+.bd .box-of-bottom .left {
+    margin-right: 10px;
+    background-image: url(../images/images-全屋智能/box-of-bottom_left.jpg);
+}
+
+.bd .box-of-bottom .right {
+    background-image: url(../images/images-全屋智能/box-of-bottom_right.jpg);
+}
+
+.bd .box-of-bottom .box-of-bottom-text {
+    width: 100%;
+    height: 182px;
+    padding: 0 64px;
+    text-align: left;
+}
+
+.bd .box-of-bottom .box-of-bottom-text h5 {
+    height: 45px;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.bd .box-of-bottom .box-of-bottom-text p {
+    height: 44px;
+    font-size: 16px;
+    color: #ffffff99;
+}
+
+.bd .box-of-bottom .box-of-bottom-text .bottom_btn {
+    padding-top: 24px;
+}
+
+.bd .box-of-bottom .box-of-bottom-text .bottom_btn a {
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 8px 7px 0;
+    padding: 13px 0;
+    color: #fff;
+    font-weight: 700;
+}
+
+.bd .box-of-bottom .box-of-bottom-text .bottom_btn a span {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin-left: 6px;
+    background-image: url(../images/images-全屋智能/box-of-bottom_jiantou.png);
+    background-size: cover;
+    transition: transform .6s ease;
+}
+
+.bd .box-of-bottom .box-of-bottom-text .bottom_btn a:hover span {
+    transform: translateX(5px);
+}
+
+.bd .footer-box {
+    width: 1200px;
+    padding-bottom: 80px;
+}
+
+.bd .footer-box p {
+    font-size: 14px;
+    color: #989898;
+}

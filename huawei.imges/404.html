@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/commen-平板.css">
+    <link rel="stylesheet" href="./css/index-手机.css">
+    <style>
+        @keyframes animation1 {
+            from {
+                transform: translateX(-600px);
+                opacity: 0.5;
+            }
+            to {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+ 
+        @keyframes animation2{
+            from {
+                transform: translateY(-533px);
+                opacity: 0.2;
+            }
+            to {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+        
+        /* div {
+            overflow: hidden;
+        } */
+
+        .img1 {
+            display: flex;
+            width: 900px;
+            margin: 50px auto;
+            animation:animation2 1.2s cubic-bezier(.5,.28,.45,1.04);
+            transition: transform 0.5s; 
+             /* 指定了变换的原点，即元素变换时的中心点。 */
+            transform-origin: 50% 50%;  
+           
+        }
+        
+        .img1:hover{
+        transform: scale(1.03);
+        }
+
+        .container {
+            text-align: center;
+            animation: animation1 1.2s cubic-bezier(.5,.28,.45,1.04);
+        }
+
+        p {
+            color: #555;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header" style="height: 80px;">
+        <div class="header_top">
+        </div>
+        <div class="nav ">
+            <div class="left">
+                <!-- jia -->
+                <div class="logo">FlyTech</div>
+                <!-- jia -->
+                <ul>
+                    <li>
+                        <a href="./index-手机.html" title="手机">手机
+                            <div class="nav_left_a_bottom"></div>
+                        </a>
+                    </li>
+                    <li><a href="./index-电脑-1.html" title="电脑">电脑
+                            <div class="nav_left_a_bottom"></div>
+                        </a></li>
+                    <li><a href="./index-平板.html" title="平板">平板
+                            <div class="nav_left_a_bottom"></div>
+                        </a></li>
+                    <li><a href="./watch.html" title="穿戴">穿戴
+                            <div class="nav_left_a_bottom"></div>
+                        </a></li>
+                    <li><a href="./404.html" title="耳机音箱">耳机音箱
+                            <div class="nav_left_a_bottom"></div>
+                        </a></li>
+                    <li><a href="./index-全屋智能.html" title="全屋智能">全屋智能
+                            <div class="nav_left_a_bottom"></div>
+                        </a></li>
+                    <li><a href="./404.html" title="路由器">路由器
+                            <div class="nav_left_a_bottom"></div>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="./index-服务支持.html">服务支持
+                            <div class="nav_right_a_bottom"></div>
+                        </a></li>
+
+                    <li><a href="./index_商用.html">商用
+                            <div class="nav_right_a_bottom"></div>
+                        </a></li>
+
+                        <!-- 放大镜 -->
+                    <li><a href="./sreach.html"></a></li>   
+                     <!--用户头像  -->
+                    <li><a href="./denlu.html"></a></li>    
+                    <li><a href="./index-商城.html">flytech商城</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top: 50px;">  <img src="./imges/imges_首页/404.webp" class="img1" alt="404"> </div>
+    <div class="container">
+        <p>哎呀！页面未找到。</p>
+    </div>
+</body>
+</html>

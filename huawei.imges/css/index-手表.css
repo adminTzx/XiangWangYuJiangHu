@@ -1,0 +1,994 @@
+/*第一部分: 介绍 */
+.introduced {
+    width: 100%;
+    background-color: #000;
+    padding-top: 80px;
+}
+
+.introduced .nav {
+    width: 100%;
+    height: 140px;
+    color: #f5f5f7;
+    font-size: 17px;
+    padding: 12px 0;
+}
+
+.introduced .nav ul {
+    margin: 0 auto;
+    padding: 0 0 49px;
+    /* background-color: #fff; */
+}
+
+.introduced .nav ul li {
+    float: left;
+    width: 102px;
+    text-align: center;
+    background-color: #000;
+}
+
+.introduced .nav ul li:nth-child(1) {
+    margin-left: 210px;
+}
+
+.introduced .nav ul li img {
+    display: block;
+    margin: 0 auto;
+    height: 54px;
+    background-color: #000;
+}
+
+.introduced .nav ul li span {
+    font-size: 12px;
+    color: #f5f5f7;
+}
+
+.introduced .nav ul li p {
+    font-size: 10px;
+    color: #F56300;
+
+}
+
+.introduced .nav ul li a:hover span {
+    color: #1e92fd;
+}
+
+.introduced .content {
+    width: 100%;
+    padding: 60px 0 0;
+    text-align: center;
+    color: #fff;
+}
+
+.introduced .content .title,
+.updates .title,
+.good .left .title{
+    height: 50px;
+    text-align: center;
+    /* background-color: pink; */
+}
+.introduced .content .title .up,
+.updates .title .up,
+.good .left .title .up{
+    height: 30px;
+    font-size: 32px;
+    line-height: 30px;
+}
+.introduced .content .title .down,
+.updates .title .down,
+.good .left .title .down{
+    margin: 0;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+
+}
+.introduced .content .title .down{
+    color: #d11819;
+}
+.introduced .content p {
+    margin-top: 12px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.introduced .content .value {
+    height: 30px;
+    line-height: 30px;
+    font-size: 21px;
+    margin: 22px 0;
+    font-weight: 400;
+}
+
+.introduced .content .buy,
+.updates .buy {
+    display: block;
+    margin: 15px auto;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #0071E3;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.introduced .content .buy:hover,
+.updates .buy:hover,
+.good .left .bottom .buy:hover {
+    background-color: #0077ed;
+}
+
+.introduced .content .bottom {
+    width: 230px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 30px;
+}
+
+.introduced .content .bottom img {
+    padding-left: 6px;
+}
+
+.introduced .content .bottom a {
+    display: inline-block;
+    height: 25px;
+}
+
+.introduced .content .bottom .more {
+    color: #2997ff;
+    margin-right: 20px;
+    padding-left: 6px;
+}
+
+.introduced .content .bottom .more .jiantou {
+    width: 16px;
+    height: 14px;
+    margin-bottom: 3px;
+}
+
+.introduced .content .bottom .film {
+    color: #2997ff;
+}
+
+.introduced .content .bottom .film .shiping {
+    width: 25px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.introduced .content .bottom .more:hover,
+.introduced .content .bottom .film:hover {
+    text-decoration: underline;
+}
+
+.introduced .watch {
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* 版心 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 野出新维度 */
+.updates {
+    padding-top: 60px;
+    padding-bottom: 150px;
+    margin-bottom: 30px;
+    background-color: #f5f5f7;
+    text-align: center;
+    color: #1d1d1f;
+}
+.updates .title .down{
+    color: #fe6a14;
+}
+.updates .new {
+    height: 50px;
+    line-height: 50px;
+    margin-top: 15px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.updates .value,
+.good .left .value {
+    height: 30px;
+    line-height: 30px;
+    margin: 22px 0;
+    font-size: 21px;
+}
+
+.updates .more,
+.good .left .bottom .more,
+.carbon .wrapper .title .more {
+    font-size: 21px;
+    color: #0066cc;
+}
+
+.updates .more:hover,
+.good .left .bottom .more:hover,
+.carbon .wrapper .title .more:hover {
+    text-decoration: underline;
+}
+
+.updates .update_jiantou,
+.good .left .bottom .more .update_jiantou,
+.carbon .wrapper .title .more .update_jiantou {
+    width: 10px;
+    height: 14px;
+    margin-left: 6px;
+    margin-bottom: 3px;
+}
+
+.updates .images {
+    margin-top: 60px;
+    width: 100%;
+}
+
+/* 好赞好入手 */
+.good {
+    width: 100%;
+    background-color: #f5f5f7;
+    padding: 35px 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1d1d1f;
+}
+
+.good .left {
+    float: left;
+    width: 225px;
+    height: 533px;
+    margin-left: 105px;
+    margin-right: 100px;
+    padding: 200px 0 74px;
+    /* background-color: pink; */
+}
+
+.good .left .title .down{
+    color: #ca1f1f;
+}
+
+.good .left .first {
+    font-size: 40px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.good .left .bottom {
+    padding-left: 15px;
+    text-align: left;
+}
+
+.good .left .bottom .buy {
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    color: #fff;
+    background-color: #0071E3;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+}
+
+.good .left .bottom .more {
+    margin: 12px 0 0 20px;
+    font-size: 17px;
+}
+
+.good .right {
+    float: left;
+    width: 613px;
+    height: 664px;
+    background-image: url(../imges/images_Watch/good_banner.jpg);
+    background-size: cover;
+    /* background-color: pink; */
+}
+
+/* 碳中和 */
+.carbon {
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 30px 30px 0;
+    background-color: #f5f5f7;
+}
+
+.carbon .wrapper {
+    padding: 30px 30px 0;
+}
+
+.carbon .wrapper .title {
+    width: 485px;
+    margin: 5px auto;
+    /* background-color: pink; */
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1d1d1f;
+}
+
+.carbon .wrapper .title h2 img {
+    height: 50px;
+}
+
+.carbon .wrapper .title p {
+    margin: 15px 0;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.carbon .wrapper .images {
+    margin: 0 auto;
+    width: 472px;
+    height: 391px;
+    background-image: url(../imges/images_Watch/carbon_banner.jpg);
+    background-size: cover;
+}
+
+/* 看看哪款 Apple Watch 适合你 */
+
+.look {
+    width: 100%;
+    background-color: #fff;
+}
+
+.look .wrapper {
+    padding-top: 50px;
+    /* background-color: pink; */
+    text-align: center;
+    color: #1d1d1f;
+}
+
+.look .wrapper h2 {
+    font-size: 48px;
+}
+
+.look .wrapper ul {
+    margin: 57px 0 44px;
+}
+
+.look .wrapper ul li {
+    float: left;
+    width: 390px;
+    margin-right: 15px;
+    /* background-color: green; */
+}
+
+.look .wrapper ul li img {
+    width: 220px;
+    margin-bottom: 30px;
+}
+
+.look .wrapper ul li:last-child {
+    margin-right: 0;
+}
+
+.look .wrapper ul li .color {
+    height: 16px;
+    /* background-color: aqua; */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.look .wrapper ul li .color li {
+    float: left;
+    margin: 0;
+    width: 11px;
+    height: 11px;
+    margin-left: 6px;
+    border-radius: 50%;
+}
+
+.look .wrapper ul li .color li:nth-child(1) {
+    background-color: #1a2530;
+}
+
+.look .wrapper ul li .color li:nth-child(2) {
+    background-color: #ded6d1;
+}
+
+.look .wrapper ul li .color li:nth-child(3) {
+    background-color: #e0e0e0;
+}
+
+.look .wrapper ul li .item {
+    padding-top: 11px;
+    /* background-color: pink; */
+}
+
+.look .wrapper ul li .item .new {
+    display: inline-block;
+    width: 100%;
+    height: 16px;
+    /* background-color: aqua; */
+    color: #bf4800;
+    font-size: 12px;
+}
+
+.look .wrapper ul li .item h3 {
+    margin-bottom: 10px;
+    padding-top: 5px;
+    font-size: 21px;
+}
+
+.look .wrapper ul li p,
+.look .wrapper ul li .small_two,
+.look .wrapper ul li .small_three {
+    font-size: 14px;
+}
+
+.look .wrapper ul li .gap {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.look .wrapper ul li .gap p {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.look .wrapper ul li .buy {
+    display: block;
+    height: 24px;
+    width: 46px;
+    margin: 16px auto;
+    background-color: #0071E3;
+    border-radius: 12px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.look .wrapper ul li .buy:hover {
+    background-color: #0077ed;
+}
+
+.look .wrapper ul li .more span {
+    font-size: 14px;
+    color: #0066cc;
+}
+
+.look .wrapper ul li .more:hover span {
+    text-decoration: underline;
+}
+
+.look .wrapper ul li .more img {
+    width: 8px;
+    height: 11px;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+.look .wrapper ul li .line {
+    height: 26px;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.look .wrapper ul li h4 {
+    font-size: 19px;
+}
+
+.look .wrapper ul li .carbon,
+.look .wrapper ul li .two,
+.look .wrapper ul li .three,
+.look .wrapper ul li .four,
+.look .wrapper ul li .five,
+.look .wrapper ul li .six,
+.look .wrapper ul li .seven,
+.look .wrapper ul li .eight,
+.look .wrapper ul li .nine,
+.look .wrapper ul li:nth-child(3) .seven {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 13px;
+}
+
+.look .wrapper ul li .carbon {
+    width: 43px;
+    height: 43px;
+    background-image: url(../imges/images_Watch/look_carbon.png);
+    background-position: 50%;
+    background-size: contain;
+}
+
+.look .wrapper ul li .two {
+    width: 57px;
+    height: 63px;
+    background-image: url(../imges/images_Watch/look_left_2.png);
+}
+
+.look .wrapper ul li .three {
+    width: 49px;
+    height: 49px;
+    background-image: url(../imges/images_Watch/look_left_3.png);
+}
+
+.look .wrapper ul li .small_two {
+    margin-top: 12px;
+}
+
+.look .wrapper ul li .small_three {
+    height: 40px;
+}
+
+.look .wrapper ul li .four {
+    width: 42px;
+    height: 38px;
+    background-image: url(../imges/images_Watch/look_left_4.png);
+}
+
+.look .wrapper ul li .five {
+    width: 41px;
+    height: 41px;
+    background-image: url(../imges/images_Watch/look_left_5.png);
+}
+
+.look .wrapper ul li .six {
+    width: 40px;
+    height: 40px;
+    background-image: url(../imges/images_Watch/look_left_6.png);
+}
+
+.look .wrapper ul li .seven {
+    width: 70px;
+    height: 60px;
+    background-image: url(../imges/images_Watch/look_left_7.png);
+}
+
+.look .wrapper ul li .eight {
+    width: 48px;
+    height: 48px;
+    background-image: url(../imges/images_Watch/gps.png);
+}
+
+.look .wrapper ul li .nine {
+    width: 49px;
+    height: 26px;
+    background-image: url(../imges/images_Watch/look_left_9.png);
+}
+
+.look .wrapper ul li .bottom_line {
+    height: 44px;
+    border-bottom: 1px solid #d2d2d7;
+}
+
+.look .wrapper ul li:nth-child(2) .color li:nth-child(4) {
+    background-color: #fadcde;
+}
+
+.look .wrapper ul li:nth-child(2) .color li:nth-child(5) {
+    background-color: #d61139;
+}
+
+.look .wrapper ul li:nth-child(2) .color li:nth-child(6) {
+    background-color: #3e3a36;
+}
+
+.look .wrapper ul li:nth-child(2) .color li:nth-child(7) {
+    background-color: #e6e6e7;
+}
+
+.look .wrapper ul li:nth-child(2) .color li:nth-child(8) {
+    background-color: #d4bda1;
+}
+
+.look .wrapper ul li:nth-child(2) .two {
+    background-image: url(../imges/images_Watch/look_center_2.png);
+}
+
+.look .wrapper ul li:nth-child(2) .three,
+.look .wrapper ul li:nth-child(3) .three {
+    background-image: url(../imges/images_Watch/look_center_3.png);
+}
+
+.look .wrapper ul li:nth-child(3) .color li:nth-child(1) {
+    background-color: #ccc4bc;
+}
+
+.look .wrapper ul li:nth-child(3) .two {
+    background-image: url(../imges/images_Watch/look_right_2.png);
+}
+
+.look .wrapper ul li:nth-child(3) .seven {
+    width: 90px;
+    height: 58px;
+    background-image: url(../imges/images_Watch/look_right_3.png);
+}
+
+.look .wrapper ul li:nth-child(2) .bottom_line {
+    height: 42px;
+}
+
+.look .wrapper .look_bottom {
+    height: 32px;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 120px;
+}
+
+.look .wrapper .look_bottom a {
+    color: #0066cc;
+}
+
+.look .wrapper .look_bottom a:hover span {
+    text-decoration: underline;
+}
+
+.look .wrapper .look_bottom a img {
+    width: 10px;
+    height: 15px;
+    margin-left: 6px;
+    margin-right: 50px;
+}
+
+/* 家人共享设置 */
+.family {
+    padding: 150px 0;
+    background-color: #f5f5f7;
+}
+
+.family .left {
+    float: left;
+    width: 600px;
+    padding: 0 40px;
+    padding-top: 80px;
+    text-align: center;
+    color: #1d1d1f;
+    /* background-color: pink; */
+}
+
+.family .left h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.family .left .all-family {
+    font-size: 48px;
+    padding-left: 50px;
+}
+
+.family .left .eyebrow {
+    font-size: 21px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.family .left .botton,
+.family .left .select_buy {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    color: #0066cc;
+}
+
+.family .left .botton {
+    width: 105px;
+    margin-left: 115px;
+    margin-right: 20px;
+    border: 1px solid #0066cc;
+    border-radius: 18px;
+}
+
+.family .left .botton:hover {
+    color: #fff;
+    background-color: #0066cc;
+}
+
+.family .left .select_buy:hover span,
+.tile a:hover span,
+.bespoke_bottom .left a:hover span,
+.bespoke_bottom .right a:hover span {
+    text-decoration: underline;
+}
+
+.family .left .select_buy img {
+    width: 7px;
+    height: 11px;
+    margin-left: 5px;
+}
+
+.family .right {
+    float: left;
+    width: 600px;
+    height: 420px;
+    background-image: url(../imges/images_Watch/family_right.jpg);
+    background-size: contain;
+
+}
+/* 换购 */
+.tile {
+    margin: 30px auto;
+    color: #1d1d1f;
+    text-align: center;
+    padding-top: 80px;
+    /* background-color: pink; */
+}
+
+.tile h2 {
+    font-size: 40px;
+}
+
+.tile p {
+    margin-top: 16px;
+    font-size: 21px;
+}
+
+.tile a {
+    display: block;
+    margin-top: 15px;
+    font-size: 21px;
+    color: #0066cc;
+}
+
+.tile a img {
+    width: 11px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+/* Apple 定制坊 */
+.bespoke {
+    padding: 100px 0;
+    margin: 30px auto;
+    background-color: #f5f5f6;
+    color: #1d1d1f;
+    text-align: center;
+}
+
+.bespoke h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.bespoke p {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.bespoke .botton {
+    height: 44px;
+    margin: 35px 0px 50px;
+}
+
+.bespoke .botton a {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    background-color: skyblue;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(90deg,
+            #03a9f4,
+            #f441a5,
+            #ffeb3b,
+            #03a9f4);
+    background-size: 400%;
+    border-radius: 10px;
+}
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 400% 0;
+    }
+}
+
+.bespoke .botton a:hover {
+    animation: animate 8s linear infinite;
+}
+
+.bespoke .botton a::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 1s;
+    background: linear-gradient(90deg,
+            #03a9f4,
+            #f441a5,
+            #ffeb3b,
+            #03a9f4);
+    background-size: 400%;
+    border-radius: 10px;
+
+}
+
+.bespoke .botton a:hover ::before {
+    filter: blur(20px);
+    opacity: 1;
+}
+
+.bespoke .bespoke_watch{
+    width: 100%;
+    height: 500px;
+    /* background-color: pink; */
+    background-image: url(../imges/images_Watch/bespoke_top_1.jpg);
+    background-size: cover;
+    background-position-x: -630px;
+}
+
+.bespoke .bespoke_watch img{
+    width: 300px;
+}
+
+.bespoke_bottom{
+    color: #1d1d1f;
+    text-align: center;
+    background-color: #fff;
+}
+
+.bespoke_bottom .left,
+.bespoke_bottom .right
+{
+    padding-top: 80px;
+    width: 590px;
+    float: left;
+    background-color: #f5f5f7;
+
+}
+.bespoke_bottom .left{
+    margin-right: 20px;
+}
+
+.bespoke_bottom .left h2,
+.bespoke_bottom .right h2
+{
+    font-size: 24px;
+}
+
+.bespoke_bottom .left p,
+.bespoke_bottom .right p{
+    font-size: 40px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.bespoke_bottom .left a,
+.bespoke_bottom .right a,
+.accessories .wrapper .left a,
+.accessories .wrapper .right a
+{
+    display: block;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 21px;
+    color: #0066cc;
+}
+.bespoke_bottom .left a img,
+.bespoke_bottom .right a img,
+.accessories .wrapper .left a img,
+.accessories .wrapper .right a img
+{
+    margin-left: 5px;
+}
+
+.bespoke_bottom .bespoke_bottom_left,
+.bespoke_bottom .bespoke_bottom_right{
+    margin-top: 50px;
+    width:100%;
+}
+
+.bespoke_bottom .right{
+    padding-bottom: 25px;
+}
+
+/* 精彩配件 */
+
+.accessories{
+    margin: 30px auto;
+    text-align: center;
+    color: #1d1d1f;
+}
+
+.accessories h3{
+    font-size: 50px;
+    padding: 130px 0px 50px;
+}
+.accessories .wrapper{
+    margin-top: 30px;
+    background-color: #fff;
+}
+.accessories .wrapper h4{
+    height: 105px;
+    font-size: 40px;
+}
+.accessories  .accessories_left,
+.accessories  .accessories_right
+{
+    width: 100%;
+}
+.accessories .wrapper .left,
+.accessories .wrapper .right{
+    position: relative;
+    float: left;
+    padding-top: 60px;
+    width: 590px;
+    background-color: #f5f5f7;
+}
+.accessories .wrapper .left{
+    margin-right: 20px;
+}
+.accessories .wrapper .left a{
+    padding-right: 20px;
+    margin-bottom: 75px;
+}
+.accessories .wrapper .left a:hover span,
+.accessories .wrapper .right a:hover span
+{
+    text-decoration: underline;
+}
+
+.accessories .wrapper .right p{
+    margin-top: 25px;
+    font-size: 20px;
+}
+.accessories .wrapper .right a{
+    position: absolute;
+    left: 50%;
+    top: 104%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+.accessories  .accessories_right{
+    position: absolute;
+    left: 0;
+    top: 246px;
+}
+.accessories .box{
+    margin: 30px;
+    background-color: #fff;
+}
+.accessories .box li{
+    float: left;
+    width: 400px;
+    padding-top: 56px;
+    text-align: center;
+    cursor: pointer;
+    color: #1d1d1f;
+}
+.accessories .box li h3{
+    margin-top: 25px;
+    font-size: 21px;
+    padding: 0;
+
+}
+.accessories .box li p{
+    font-size: 19px;
+    margin-top: 10px;
+}
+.accessories .box li a{
+    margin-top: 15px;
+    display: block;
+    color: #0066cc;
+}
+.accessories .box li a img{
+    width: 11px;
+    height: 14px;
+}
+.accessories .box li:hover span{
+    text-decoration: underline;
+}
+
+.accessories .box li:nth-child(3) .box_right{
+    width: 100px;
+}

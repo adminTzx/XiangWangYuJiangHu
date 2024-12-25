@@ -1,0 +1,27 @@
+<svg id="组件_21_1" data-name="组件 21 – 1" xmlns="http://www.w3.org/2000/svg" width="46" height="31" viewBox="0 0 46 31">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="矩形" class="cls-1" transform="translate(2)">
+    <rect class="cls-3" width="42" height="28" rx="4"/>
+    <rect class="cls-4" x="1" y="1" width="40" height="26" rx="3"/>
+  </g>
+  <g id="矩形-2" data-name="矩形" class="cls-2" transform="translate(0 29)">
+    <rect class="cls-3" width="46" height="2" rx="1"/>
+    <rect class="cls-4" x="1" y="1" width="44"/>
+  </g>
+</svg>

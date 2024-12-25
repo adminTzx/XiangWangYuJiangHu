@@ -1,0 +1,15 @@
+<svg id="编组_23" data-name="编组 23" xmlns="http://www.w3.org/2000/svg" width="42" height="34" viewBox="0 0 42 34">
+  <g id="矩形" transform="translate(6)" fill="#f0f0f0" stroke="#000" stroke-miterlimit="10" stroke-width="2">
+    <rect width="30" height="12" stroke="none"/>
+    <rect x="1" y="1" width="28" height="10" fill="none"/>
+  </g>
+  <rect id="矩形-2" data-name="矩形" width="2" height="2" transform="translate(6 17)"/>
+  <g id="矩形-3" data-name="矩形" transform="translate(0 10)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2">
+    <rect width="42" height="24" stroke="none"/>
+    <rect x="1" y="1" width="40" height="22" fill="none"/>
+  </g>
+  <g id="矩形-4" data-name="矩形" transform="translate(6 22)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2">
+    <rect width="30" height="12" stroke="none"/>
+    <rect x="1" y="1" width="28" height="10" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="编组_9备份" data-name="编组 9备份" width="20" height="20" viewBox="0 0 20 20">
+  <circle xmlns="http://www.w3.org/2000/svg" id="椭圆形" cx="10" cy="10" r="10" fill="#fff"/>
+  <g id="编组_37" data-name="编组 37" transform="translate(4 4)">
+    <g id="编组_8" data-name="编组 8" transform="translate(5)">
+      <rect id="矩形" width="12" height="2" rx="1" transform="translate(0 12) rotate(-90)" fill="#000"/>
+    </g>
+    <g id="编组_8-2" data-name="编组 8" transform="translate(12 5) rotate(90)">
+      <rect id="矩形-2" data-name="矩形" width="12" height="2" rx="1" transform="translate(0 12) rotate(-90)" fill="#000"/>
+    </g>
+  </g>
+</svg>
